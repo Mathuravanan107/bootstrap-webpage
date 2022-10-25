@@ -2,6 +2,21 @@
 	margin:0;
 	padding:0;
 }
+h1,h2,h3,h4,h5{
+	font-family: "Raleway", sans-serif;
+	font-weight: 800;
+	font-size:24px;
+}
+body p{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+    color: #212529;
+}
+iconify-icon{
+	font-size: 42px;
+    margin-top: 15px;
+    color: #f39e7a;
+}
 .banner{
 	width: 100%;
     background: #fef8f5;
@@ -20,4 +35,14 @@
     margin-top: 10px;
     color: #fff;
     background: #eb5d1e
+}
+.about h4{
+	font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #7a6960;
+}
+.about p{
+	font-size: 14px;
+    color: #5a6570;
 }
