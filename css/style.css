@@ -9,13 +9,11 @@ h1,h2,h3,h4,h5{
 }
 body p{
 	font-family: "Open Sans", sans-serif;
-	font-weight: 700;
-    color: #212529;
 }
 iconify-icon{
 	font-size: 42px;
     margin-top: 15px;
-    color: #f39e7a;
+    color:#ef7f4d;
 }
 .banner{
 	width: 100%;
@@ -36,6 +34,30 @@ iconify-icon{
     color: #fff;
     background: #eb5d1e
 }
+.service{
+	background-color: #fef8f5;
+}
+.col h4{
+	font-size:1.3rem;
+	color: #c2b7b1;
+}
+.col p{
+	font-size: 2rem;
+    font-weight: 800;
+    color: #4e4039;
+	position:relative;
+}
+.col p::after{
+	content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    bottom: 0;
+    left: calc(50% - 30px);
+	top:55px;
+}
 .about h4{
 	font-size: 20px;
     font-weight: 700;
@@ -45,4 +67,20 @@ iconify-icon{
 .about p{
 	font-size: 14px;
     color: #5a6570;
+}
+.card-title{
+	font-size:1.2rem;
+}
+.card-title a{
+	text-decoration:none;
+	color:#000000;
+}
+.card-text{
+	font-size:0.8rem;
+}
+.card{
+	border-radius:1.25rem;
+}
+.card:hover{
+	border-bottom:2px solid #ef7f4d;
 }
