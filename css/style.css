@@ -35,6 +35,13 @@ iconify-icon{
     color: #fff;
     background: #eb5d1e
 }
+.nav-link{
+	font-weight:600;
+}
+.navbar-brand{
+	letter-spacing:1px;
+	font-weight:600;
+}
 .service{
 	background-color: #fef8f5;
 }
@@ -57,7 +64,20 @@ iconify-icon{
     background: #eb5d1e;
     bottom: 0;
     left: calc(50% - 30px);
+	top:152px;
+}
+@media(min-width:720px){
+.col p::after{
+	content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    bottom: 0;
+    left: calc(50% - 30px);
 	top:55px;
+}
 }
 .about h4{
 	font-size: 20px;
@@ -76,6 +96,9 @@ iconify-icon{
 	text-decoration:none;
 	color:#000000;
 }
+.card-title a:hover{
+	color:#000000;
+}
 .card-text{
 	font-size:0.8rem;
 }
@@ -84,9 +107,15 @@ iconify-icon{
 }
 .card:hover{
 	border-bottom:4px solid #ef7f4d;
+	transform:ease all 0.5s;
+	transform:translatey(-3px);
+	margin-top:-15px;
 }
-.nav-item a:hover{
-	color: #fef8f5;
+.active :hover{
+	color: #eb5d1e;
+}
+.view a:hover{
+	color:#fff;
 }
 .filter-app{
 	position:relative;
@@ -157,12 +186,12 @@ iconify-icon{
 	 color: #343a40;
 }
 .accordion-item button:hover{
-	    color: #c54811;
+	 color: #c54811;
 }
 #question .accordion-body{
 	padding-left:17%;
 }
-.accordion-item{
+.accordion-button{
 	box-shadow:none;
 }
 @media(min-width:720px){
@@ -173,28 +202,40 @@ iconify-icon{
 /*---Team section----*/
 .member{
 	position:relative;
+	overflow:hidden;
+}
+.member img{
+	padding:2px;
 }
 .member-social{
 	position:absolute;
+	width:50px;
 	top:0;
 	bottom:0;
-	left:0;
-	right:0;
+	background:rgba(78,64,57,0.6);
+	opacity:0;
+	left:0px;
+	right:0px;
+	transition:1s;
 }
 .member-info{
 	position:absolute;
 	top: 12rem;
 	bottom:0;
-	left:0;
-	right:0;
+	left:0px;
+	right:0px;
+	opacity:0;
 	text-align:center;
 	color:#ffffff;
+	z-index:997;
 }
 .member-social iconify-icon{
 	display:block;
-	font-size:2rem;
+	font-size:1.5rem;
 	color:#ffffff;
-	background-color:
+}
+.member-social iconify-icon:hover{
+	color: #eb5d1e;
 }
 .member:hover .member-info{
 	opacity:1;
@@ -213,6 +254,9 @@ iconify-icon{
 	padding:30px;
 	border-bottom:2px solid #eb5d1e;
 	border-top:2px solid #eb5d1e;
+}
+#contact .base{
+	margin-bottom:30px;
 }
 #contact .contact-info iconify-icon{
 	width:44px;
@@ -353,4 +397,7 @@ input:focus{
 }
 .last{
 	font-size:14px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #eb5d1e !important;
 }
