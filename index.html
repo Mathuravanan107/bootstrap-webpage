@@ -21,19 +21,19 @@
          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#aboutus">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#service">Services</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Team</a>
+          <a class="nav-link" href="#team">Team</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,7 +46,7 @@
           </ul>
          </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         </ul>
 	   <button class="btn btn-danger me-md-2 rounded-pill" type="button">Get Started</button>
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 </section>
-<section class="about">
+<section class="about" id="aboutus">
     <div class="container">
 	    <div class="row justify-content-between">
             <div class="col-lg-5 p-5">
@@ -95,7 +95,7 @@
         </div>
    </div>
 </section>
-<section class="service p-4">
+<section class="service p-4" id="service">
      <div class="container">
 	      <div class="row">
 		     <div class="col text-center">
@@ -143,7 +143,7 @@
 		  </div>
 	 </div>
 </section>
-<section class="Portfolio">
+<section class="Portfolio" id="portfolio">
       <div class="container">
 	      <div class="row p-3">
 		      <div class="col text-center">
@@ -302,12 +302,12 @@
 		</div>
 		<div class="accordion mt-5" id="accordionExample">
 			<div class="accordion-item border-top-0 border-start-0 border-end-0">
-				<h2 class="accordion-header" id="headingTwo">
-					<button class="accordion-button collapsed question-button fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target=	"#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Non consectetur a erat nam at lectus urna duis?</button>
+				<h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button collapsed question-button fw-bold fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Non consectetur a erat nam at lectus urna duis?</button>
 				</h2>
-				<div id="collapseTwo" class="accordion-collapse collapse question-button" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div id="collapseOne" class="accordion-collapse collapse show question-button" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 					<div class="accordion-body">
-						<p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+						<p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
 					</div>
 				</div>
 			</div>
@@ -364,7 +364,7 @@
 		</div>
 	</div>
 </section>
-<section class="team">
+<section class="team" id="team">
     <div class="container">
 	   <div class="row p-3">
 	       <div class="col text-center">
@@ -377,8 +377,10 @@
 				<div class="row member">
 					<img src="img/team-1.jpg">
 					<div class="member-info">
+					    <div class="member-info-content">
 						<h4>Walter White</h4>
 						<span>Chief Executive Officer</span>
+						</div>
 					</div>
 					<div class="member-social">
 						<iconify-icon icon="ant-design:twitter-outlined"></iconify-icon>
@@ -392,8 +394,10 @@
 				<div class="row member">
 					<img src="img/team-2.jpg">
 					<div class="member-info">
+					   <div class="member-info-content">
 						<h4>Sarah Jhonson</h4>
 						<span>Product Manager</span>
+					   </div>
 					</div>
 					<div class="member-social">
 						<iconify-icon icon="ant-design:twitter-outlined"></iconify-icon>
@@ -407,8 +411,10 @@
 				<div class="row member">
 					<img src="img/team-3.jpg">
 					<div class="member-info">
+					   <div class="member-info-content">
 						<h4>William Anderson</h4>
 						<span>CTO</span>
+					   </div>
 					</div>
 					<div class="member-social">
                         <iconify-icon icon="ant-design:twitter-outlined"></iconify-icon>
@@ -422,8 +428,10 @@
 				<div class="row member">
 					<img src="img/team-4.jpg">
 					<div class="member-info">
+					   <div class="member-info-content">
 						<h4>Amanda Jepson</h4>
 						<span>Accountant</span>
+						</div>
 					</div>
 					<div class="member-social">
 						<iconify-icon icon="ant-design:twitter-outlined"></iconify-icon>
@@ -436,7 +444,7 @@
 		</div>
 	</div>
 </section>
-<section class="client">
+<section class="client news">
      <div class="container">
 	      <div class="row p-3">
 		      <div class="col text-center">
@@ -510,11 +518,11 @@
 		    <div class="col-12 col-md-12 col-lg-7 shadow contact-details">
 				<form action="" class="contact-form">
 					<div class="row">
-						<div class="col-6 form-group">
+						<div class="col-12 col-md-6 form-group">
 							<label for="name" class="form-label">YOUR NAME</label>
 							<input type="text" class="form-control " id="name" placeholder="Your Name">
 						</div>
-						<div class="col-6 form-group">
+						<div class="col-12 col-md-6 form-group">
 							<label for="email" class="form-label">YOUR EMAIL</label>
 							<input type="email" class="form-control " id="name" placeholder="Your Email">
 						</div>
@@ -547,7 +555,6 @@
 				</form>
 			   </div>
 	      </div>
-	        
 	  </div>
 </section>
 <section class="footer">
@@ -576,23 +583,23 @@
 				<ul>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Home</a>
+						<a href="#">Home</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">About us</a>
+						<a href="#">About us</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Services</a>
+						<a href="#">Services</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Terms of service</a>
+						<a href="#">Terms of service</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Privacy policy</a>
+						<a href="#">Privacy policy</a>
 					</li>
 				</ul>
 			</div>
@@ -601,23 +608,23 @@
 				<ul>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Web Design</a>
+						<a href="#">Web Design</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Web Development</a>
+						<a href="#">Web Development</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Product Management</a>
+						<a href="#">Product Management</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Marketing</a>
+						<a href="#">Marketing</a>
 					</li>
 					<li>
 						<iconify-icon icon="ei:chevron-right"></iconify-icon> 
-						<a href="">Graphic Design</a>
+						<a href="#">Graphic Design</a>
 					</li>
 				</ul>
 			</div>
