@@ -188,11 +188,41 @@ iconify-icon{
 .accordion-item button:hover{
 	 color: #c54811;
 }
+#question .accordion-button:not(.collapsed)::before{
+	background-image: url(../image/faq.svg);
+	transform:rotate(-180deg);
+}
+#question .accordion-button::before{
+	flex-shrink:0;
+	width:1.25rem;
+	height:1.25rem;
+	margin:0 22px 0px 0px;
+	content:"";
+	background-image:url(../image/faq.svg);
+	background-repeat:no-repeat;
+	background-size:1.25rem;
+	transition:transform .2s ease-in-out;
+}
+#question .accordion-button::after{
+	display:none;
+}
+#question .accordion-button:focus{
+	z-index:3;
+	border-color:red;
+	outline:0;
+	box-shadow:none;
+}
+#question .accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #e7f1ff;
+}
 #question .accordion-body{
 	padding-left:17%;
 }
-.accordion-button{
-	box-shadow:none;
+@media(min-width:720px){
+	#question .accordion-body{
+	padding-left:9%;
+	}
 }
 @media(min-width:720px){
 	#question .accordion-body{
@@ -200,53 +230,61 @@ iconify-icon{
 	}
 }
 /*---Team section----*/
-.member{
+.member h4{
+	font-size:1rem;
+}
+#team .member{
 	position:relative;
 	overflow:hidden;
 }
-.member img{
-	padding:2px;
-}
-.member-social{
+#team .member-info{
 	position:absolute;
-	width:50px;
-	top:0;
-	bottom:0;
-	background:rgba(78,64,57,0.6);
+	bottom:-22%;
+	text-align:center;
+	color:#fff;
 	opacity:0;
-	left:0px;
-	right:0px;
+	height:100%;
 	transition:1s;
 }
-.member-info{
+#team .member-info-content{
 	position:absolute;
-	top: 12rem;
-	bottom:0;
-	left:0px;
-	right:0px;
-	opacity:0;
-	text-align:center;
-	color:#ffffff;
-	z-index:997;
+	bottom:20px;
+	left:30%;
 }
-.member-social iconify-icon{
+#team .member-social{
+	color:#fff;
+	width:20%;
+	text-align:center;
+	background:rgba(78,64,57,0.6);
+	position:absolute;
+	top:0;
+	bottom:0;
+	opacity:0;
+	left:-70px;
+	transition:1s;
+}
+#team .member-social iconify-icon{
 	display:block;
 	font-size:1.5rem;
-	color:#ffffff;
+	margin-top:0.8rem;
+	color:#fff;
 }
 .member-social iconify-icon:hover{
 	color: #eb5d1e;
 }
-.member:hover .member-info{
-	opacity:1;
+#team .member:hover .member-info{
+    opacity:1;
 	background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+	bottom:0;
 }
-.member:hover .member-social{
-	opacity:1;
+#team .member:hover .member-social{
+    opacity:1;
+	left:0px;
 }
-.client{
-	background-color: #fef8f5;
+.member img{
+	padding:0;
 }
+
 /*-----contect----*/
 .contact-info{
 	background-color:#fff;
@@ -310,7 +348,7 @@ iframe{
 }
 /*----contact end----*/
 .news{
-    background-color: #fef8f5;
+    background-color: #fef8f5!important;
 }
 .news h4{
 	font-size: 2rem;
