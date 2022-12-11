@@ -347,8 +347,14 @@ iframe{
 	box-shadow:none;
 }
 /*----contact end----*/
+.client{
+	background-color: #fef8f5;
+}
+ .item{
+	 width:50%;
+ }          
 .news{
-    background-color: #fef8f5!important;
+    background-color: #fef8f5;
 }
 .news h4{
 	font-size: 2rem;
