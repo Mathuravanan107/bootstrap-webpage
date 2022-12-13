@@ -22,6 +22,10 @@ iconify-icon{
     margin: 5px 0;
 	padding:50px;
 }
+.nro{
+	background:#eb5d1e!important;
+	color:#fff!important;
+}
 .btn-get-started{
 	text-decoration:none;
 	font-weight: 500;
@@ -33,7 +37,7 @@ iconify-icon{
     transition: 0.5s;
     margin-top: 10px;
     color: #fff;
-    background: #eb5d1e
+    background: #eb5d1e;
 }
 .nav-link{
 	font-weight:600;
@@ -189,7 +193,7 @@ iconify-icon{
 	 color: #c54811;
 }
 #question .accordion-button:not(.collapsed)::before{
-	background-image: url(../image/faq.svg);
+	background-image: url(../img/faq.svg);
 	transform:rotate(-180deg);
 }
 #question .accordion-button::before{
@@ -198,7 +202,7 @@ iconify-icon{
 	height:1.25rem;
 	margin:0 22px 0px 0px;
 	content:"";
-	background-image:url(../image/faq.svg);
+	background-image:url(../img/faq.svg);
 	background-repeat:no-repeat;
 	background-size:1.25rem;
 	transition:transform .2s ease-in-out;
