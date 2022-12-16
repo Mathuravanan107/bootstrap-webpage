@@ -83,6 +83,19 @@ iconify-icon{
 	top:55px;
 }
 }
+@media(min-width:1024px){
+.col p::after{
+	content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    bottom: 0;
+    left: calc(50% - 30px);
+	top:55px;
+}
+}
 .about h4{
 	font-size: 20px;
     font-weight: 700;
@@ -112,7 +125,7 @@ iconify-icon{
 .card:hover{
 	border-bottom:4px solid #ef7f4d;
 	transform:ease all 0.5s;
-	transform:translatey(-3px);
+	transform:translatey(-1px);
 	margin-top:-15px;
 }
 .active :hover{
